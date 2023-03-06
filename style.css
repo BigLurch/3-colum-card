@@ -1,0 +1,132 @@
+:root {
+  --color-sedan: hsl(31, 77%, 52%);
+  --color-suv: hsl(184, 100%, 22%);
+  --color-luxury: hsl(179, 100%, 13%);
+  --color-text: hsla(0, 0%, 100%, 0.75);
+  --color-main-bg: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.container {
+  background-color: var(--color-main-bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  width: 60vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cards__sedans {
+  background-color: var(--color-sedan);
+}
+.cards__sedans-image {
+  margin: 2rem 0 3rem 0;
+}
+.cards__suvs {
+  background-color: var(--color-suv);
+}
+.cards__suvs-image {
+  margin: 2rem 0 3rem 0;
+}
+.cards__luxury {
+  background-color: var(--color-luxury);
+}
+.cards__luxury-image {
+  margin: 2rem 0 3rem 0;
+}
+.cards__content {
+  padding: 3rem;
+}
+.cards__title {
+  margin: 3rem 0;
+}
+.cards__text {
+  margin: 0 0 6rem 0;
+}
+.cards__button {
+  border: 2px solid var(--color-text);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  background-color: var(--color-text);
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+.cards__button-sedan {
+  color: var(--color-sedan);
+}
+.cards__button-suv {
+  color: var(--color-suv);
+}
+.cards__button-luxury {
+  color: var(--color-luxury);
+}
+.cards__button:hover {
+  color: var(--color-text);
+  background-color: transparent;
+  border: 2px solid var(--color-text);
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cards__content {
+    padding: 2rem;
+  }
+  .cards__title {
+    margin: 2rem 0;
+  }
+  .cards__text {
+    margin: 0 0 2rem 0;
+  }
+  .cards__sedans-image {
+    margin: 1rem 0 2rem 0;
+  }
+  .cards__suvs-image {
+    margin: 1rem 0 2rem 0;
+  }
+  .cards__luxury-image {
+    margin: 1rem 0 2rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
